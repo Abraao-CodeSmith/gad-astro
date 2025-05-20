@@ -4,7 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <title>especies dos insetos</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <style>
+        body {
+            background: #0a0a23;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .nav-icon {
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .nav-icon:hover {
+            transform: scale(1.2);
+            color: #00ccff;
+        }
+
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .image-card {
+            background: #18183a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+            width: 320px;
+            text-align: center;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .image-card p {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+        
+        .texto {
+            text-align: center;
+            padding: 2rem;
+            background: #18183a;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .texto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .videos {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .video-container {
+            background: #18183a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+            width: 560px;
+            margin: 0 auto;
+        }
+
+        .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fullscreen-overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .logo {
+            height: 50px;
+            /* ou ajuste para 40px, 60px, como preferir */
+            width: auto;
+            vertical-align: middle;
+        }
+
+
+        @media (max-width: 700px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
